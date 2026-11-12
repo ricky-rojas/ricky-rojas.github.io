@@ -1,6 +1,6 @@
 # Ricky Rojas — personal site
 
-Static site deployed via GitHub Pages at [rickyrojas311.github.io](https://rickyrojas311.github.io/).
+Static site deployed via GitHub Pages at [ricky-rojas.github.io](https://ricky-rojas.github.io/).
 
 ## Editing content
 
@@ -20,23 +20,11 @@ Static site deployed via GitHub Pages at [rickyrojas311.github.io](https://ricky
 
 ## Hosting on GitHub Pages
 
-This repo isn't connected to git yet. To get it live at `rickyrojas311.github.io`:
+The site is a GitHub Pages **user site** owned by the `ricky-rojas` organization. The repo is `ricky-rojas/ricky-rojas.github.io`, and that exact name is what makes it serve at the domain root.
 
-1. **Create the repo on GitHub.** It must be named exactly `rickyrojas311.github.io` (that exact name is what makes it a user site served at the domain root instead of a `/repo-name/` subpath). Create it empty — no README, no `.gitignore`.
-2. **Push this folder to it:**
-   ```sh
-   git init
-   git add .
-   git commit -m "Initial site"
-   git branch -M main
-   git remote add origin https://github.com/rickyrojas311/rickyrojas311.github.io.git
-   git push -u origin main
-   ```
-3. **Enable Pages.** In the repo, go to Settings → Pages. Under "Build and deployment," set Source to "Deploy from a branch," branch `main`, folder `/ (root)`. Save.
-4. **Wait a minute, then visit** `https://rickyrojas311.github.io/`. GitHub shows a green checkmark under Settings → Pages once the build finishes.
-5. Every future `git push` to `main` redeploys automatically — no other steps.
-
-For the SciComm portfolio, repeat the same process in its own repo named `nsc-portfolio` (a project-site repo, not a user-site one — any name works for Pages, but it must be `nsc-portfolio` to land at `/nsc-portfolio/`). Same Settings → Pages steps there.
+- Settings → Pages: Source "Deploy from a branch," branch `main`, folder `/ (root)`.
+- The SciComm portfolio is still a project site on the personal account (`rickyrojas311/nsc-portfolio`), so it stays at `rickyrojas311.github.io/nsc-portfolio/`.
+- The old address `rickyrojas311.github.io` is a separate redirect-only repo on the personal account (`rickyrojas311/rickyrojas311.github.io`) that sends every old path to the same path on `ricky-rojas.github.io`.
 
 ## Deploying
 
